@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #013914;
+  color: white;
+  top: 0px;
+  position: sticky;
+
+  .container {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+      .text {
+      }
+      .dot {
+        color: #1dbf73;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    button {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: 1px solid white;
+      cursor: pointer;
+      background-color: transparent;
+
+      &:hover {
+        background-color: #1dbf73;
+        border-color: #1dbf73;
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    height: 0;
+    border: 0.5px solid lightgray;
+  }
+  .menu {
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+//SCSS, which stands for "Sassy CSS," is a CSS preprocessor, or an extension of CSS. It adds some extra features and capabilities to CSS to make it more powerful and maintainable. Here are the key differences between SCSS and plain CSS:
+
+// Syntax:
+
+// CSS: CSS uses a simple and straightforward syntax with curly braces {} and semicolons ; to define rules and properties. For example:
+
+// css
+// Copy code
+// .container {
+//   width: 100%;
+//   margin: 0 auto;
+// }
+// SCSS: SCSS uses a more concise and flexible syntax with nested rules and variables. It allows you to nest rules inside other rules, making it easier to write and read styles for complex structures. For example:
+
+// scss
+// Copy code
+// .container {
+//   width: 100%;
+//   margin: 0 auto;
+
+//   .header {
+//     background-color: #333;
+//     color: #fff;
+//   }
+// }
+// Variables:
+
+// CSS: CSS does not support variables. You have to repeat values like colors, fonts, or sizes throughout your stylesheet.
+
+// SCSS: SCSS allows you to declare variables, making it easier to reuse values throughout your styles. For example:
+
+// scss
+// Copy code
+// $primary-color: #007bff;
+
+// .button {
+//   background-color: $primary-color;
+// }
+// Mixins:
+
+// CSS: CSS doesn't have built-in support for mixins, which are reusable blocks of styles.
+
+// SCSS: SCSS allows you to create and use mixins to reuse styles across your codebase. For example:
+
+// scss
+// Copy code
+// @mixin button-styles {
+//   padding: 10px 20px;
+//   background-color: #007bff;
+//   color: #fff;
+//   border: none;
+// }
+
+// .button {
+//   @include button-styles;
+// }
+// Nesting:
+
+// CSS: In plain CSS, you have to write selectors for nested elements separately, leading to repetitive code.
+
+// SCSS: SCSS lets you nest selectors, making it more readable and less repetitive. For example:
+
+// scss
+// Copy code
+// .container {
+//   .header {
+//     // Styles for the header inside the container
+//   }
+// }
+// Imports:
+
+// CSS: In CSS, you can import other CSS files, but it's a simple concatenation of stylesheets.
+
+// SCSS: SCSS allows you to use @import to include other SCSS files and combine their styles. It also provides better control over how stylesheets are combined and compiled.
+
+// Math Operations:
+
+// CSS: CSS doesn't support mathematical operations within style properties.
+
+// SCSS: SCSS allows you to perform mathematical operations within your styles. For example:
+
+// scss
+// Copy code
+// $margin: 10px;
+// .element {
+//   margin: $margin * 2;
+// }
+// In summary, SCSS is an extension of CSS that offers a more powerful and maintainable way to write styles. It includes features like nesting, variables, mixins, and more, which can help improve code organization, reusability, and readability in your stylesheet. When you write SCSS, you'll need to compile it into regular CSS before using it in a web project. This compilation step is typically handled by a build tool or a preprocessor like Sass.
